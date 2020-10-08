@@ -32,7 +32,9 @@ input = gets.strip
 input_to_index(index)
 if input_to_index(index) == nil
    valid_move?(board, index)
-   display_board
+   display_board(board)
+ else
+   
 end
 # if index is valid
 #   make the move for index
