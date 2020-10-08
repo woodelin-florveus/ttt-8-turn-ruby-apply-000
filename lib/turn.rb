@@ -29,7 +29,7 @@ def valid_move?(board, index)
      turn(board)
   end
   end
-  end
+
 
   def position_taken?(board, index)
   board[index] != " "
