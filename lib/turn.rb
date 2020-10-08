@@ -27,7 +27,7 @@ def move(board, index, current_player = "X")
 end
 
 def turn(board)
-  puts "Please enter 1-9:"
+ "Please enter 1-9:"
 input = gets.strip
 input_to_index(index)
 if input_to_index(index) == nil
@@ -36,11 +36,5 @@ if input_to_index(index) == nil
  else
    input_to_index(index)
 end
-# if index is valid
-#   make the move for index
-#   show the board
-# else
-#   ask for input again until you get a valid input
-# end
 end
 end
