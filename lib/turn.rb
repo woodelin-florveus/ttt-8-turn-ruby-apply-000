@@ -22,7 +22,7 @@ def valid_move?(board, index)
    puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
-  if input_to_index(index) == nil
+  if index == nil
      valid_move?(board, index)
      display_board(board)
    else
