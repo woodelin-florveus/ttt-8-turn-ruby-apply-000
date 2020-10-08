@@ -18,6 +18,19 @@ def valid_move?(board, index)
     end
   end
 
+  def turn(board)
+   puts "Please enter 1-9:"
+  input = gets.strip
+  input_to_index(input)
+  if input_to_index(index) == nil
+     valid_move?(board, index)
+     display_board(board)
+   else
+     input_to_index(index)
+  end
+  end
+  end
+
   def position_taken?(board, index)
   board[index] != " "
 end
@@ -26,15 +39,4 @@ def move(board, index, current_player = "X")
   board[index] = current_player
 end
 
-def turn(board)
- puts "Please enter 1-9:"
-input = gets.strip
-input_to_index(input)
-if input_to_index(index) == nil
-   valid_move?(board, index)
-   display_board(board)
- else
-   input_to_index(index)
-end
-end
-end
+
