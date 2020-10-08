@@ -26,7 +26,7 @@ def valid_move?(board, index)
     move(board,index)
      display_board(board)
    else
-     input_to_index(index)
+     turn(board)
   end
   end
   end
