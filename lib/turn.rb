@@ -34,7 +34,7 @@ if input_to_index(index) == nil
    valid_move?(board, index)
    display_board(board)
  else
-
+   input_to_index(index)
 end
 # if index is valid
 #   make the move for index
