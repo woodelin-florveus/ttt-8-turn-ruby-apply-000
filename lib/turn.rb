@@ -29,7 +29,7 @@ end
 def turn(board)
  puts "Please enter 1-9:"
 input = gets.strip
-input_to_index(index)
+input_to_index(input)
 if input_to_index(index) == nil
    valid_move?(board, index)
    display_board(board)
